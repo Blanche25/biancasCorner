@@ -1,22 +1,4 @@
-:root {
-  /* Base colors */
-  --base: #181515;
-  --surface: #221E1E;
-  --overlay: #423939;
-
-  /* Text colors */
-  --text: #F4E6D2;
-  --subtle: #6e6a86;
-  --muted: #797593;
-
-  /* Highlight colors */
-  --red: #CA3F3F;
-  --orange: #E46A3A;
-  --yellow: #E39C45;
-  --green: #989F56;
-  --blue: #4A5A8D;
-  --purple: #9F569A;
-}
+@import url(colorschemes/decay.css);
 
 @font-face {
   font-family: "Iosevka";
@@ -38,7 +20,7 @@
 body {
   font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: var(--base);
-  /*background-image: linear-gradient(rgba(234, 157, 52, 0.1), rgba(234, 157, 52, 0.1)), url(assets/background.jpg);*/
+  /* background-image: linear-gradient(rgba(234, 157, 52, 0.1), rgba(234, 157, 52, 0.1)), url(assets/background.jpg); */
   color: var(--text);
   margin: 0;
   padding: 2rem;
@@ -73,7 +55,7 @@ header {
   position: absolute;
   top: 40%;
   left: 2%;
-  background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--green), var(--blue), var(--purple));
+  /* background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--green), var(--blue), var(--purple)); */
 
   color: var(--text);
 }
