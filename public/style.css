@@ -1,4 +1,4 @@
-@import url(colorschemes/decay.css);
+@import url(colorschemes/paradise.css);
 
 @font-face {
   font-family: "Iosevka";
@@ -49,6 +49,7 @@ header {
   border-radius: 15px;
   margin: auto;
   object-fit: cover;
+  filter: brightness(0.5);
 }
 
 .header-text {
@@ -140,8 +141,9 @@ a:hover {
 
 hr {
   border: none;
-  height: 4px;
-  background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--green), var(--blue), var(--purple));
+  height: 2px;
+  background: var(--text);
+  /* background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--green), var(--blue), var(--purple)); */
 }
 
 small {
@@ -187,6 +189,12 @@ small {
   font-size: 0.875rem;
   margin-top: 0px;
   display: block;
+}
+
+.recent p{
+    padding-bottom: 0.5rem;
+    padding-top: 0rem;
+    border-bottom: 0.2rem dashed var(--text);
 }
 
 .recent-frame {
