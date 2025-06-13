@@ -20,6 +20,7 @@ const posts = [
     file: "linux has consumed me.html",
   },
 ];
+
 // Get all posts
 async function getAllPosts() {
   const allPosts = posts
@@ -35,6 +36,8 @@ async function displayAllPosts() {
   const ul = document.createElement("ul");
   allPosts.forEach((post) => {
     const li = document.createElement("li");
+    li.classList.add("tile");
+
     const a = document.createElement("a");
     a.href = `posts/${post.file}`;
     a.textContent = `${post.date} - ${post.title}`;

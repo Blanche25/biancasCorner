@@ -1,0 +1,65 @@
+@import url(../colorschemes/biscuit.css);
+
+@font-face {
+    font-family: 'Iosevka';
+    src: url('../assets/fonts/Iosevka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:hover {
+    color: var(--base);
+    background-color: var(--text);
+}
+
+hr {
+    color: var(--text);
+}
+
+html {
+    font-family: 'Iosevka';
+    font-size: 1rem;
+    color: var(--text)
+}
+
+table {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    max-height: fit-content;
+}
+
+.refresh {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+a#track {
+    font-weight: bold;
+}
+
+#heart {
+    margin: 0px 10px;
+}
+
+#date {
+    font-size: 0.8rem;
+}

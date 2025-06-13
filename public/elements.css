@@ -6,11 +6,11 @@
     font-size: 12px;
 }
 .site-box > a > p {
-    color: var(--darkbrown);
+    color: white;
     font-weight: bold;
 }
 .site-box > a > span {
-    color: var(--darkbrown);
+    color: white;
 }
 .site-box .sitefeature .screenshot{display: ''};
 .follow {
