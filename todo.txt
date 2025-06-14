@@ -1,4 +1,0 @@
-- remake the title cards
-- make new homepage layout (hopefully more mobile friendly?)
-- make new site icon
-- turn recent changes into a lil notepad type thing
