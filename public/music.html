@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Blanche">
+    <meta name="description" content="a small personal website">
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bianca's corner</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <img class="header-img" src="assets/starsky.png" alt="" />
+           <h1 class="header-text">//music</h1>
+        </header>
+        <a href="index.html">- go back</a><br><br>
+        <p class="tile">here's where the music stuff is! <br>
+            most of the stuff i write/transcript is for classical guitar, so that's your warning
+            for anyone out there with a deep irrational fear of string instruments. oh also
+            sometimes instead of actual recordings there'll be midi version of songs, usually
+            because i either couldn't be bothered/it requires multiple people/i made it too hard.</p><br>
+        <div class="tile">
+            <button type="button" class="collapsible">> my music</button>
+            <div class="content">
+                <div>
+                    <hr>
+                    <h3>Lullaby</h3>
+                    <small>14th jun 2025</small><br>
+                    <small><a href="assets/music/sheets/Lullaby.pdf">[sheet music]</a></small>
+                    <br><br>
+                    <audio controls>
+                    <source src="horse.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                    </audio>
+                    <br>
+                    <p>
+                        small composition for classical guitar i made in about half a day after hearing the melody in my head when i woke up (which for some
+                        reason happened multiple times?). it's the first original piece i'm putting on here,
+                        i think it turned out good enough, i'm pretty proud of it.
+                    </p>
+                </div>
+                <div>
+                    <hr>
+                    <h3>more soon...</h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="tile">
+            <button type="button" class="collapsible">> arrangements</button>
+            <div class="content">
+                <hr>
+                <h3>Moonsetter</h3>
+                <small>18 mar 2025</small><br>
+                <small><a href="assets/music/sheets/Moonsetter.pdf">[sheet music]</a></small>
+                <br><br>
+                <audio controls>
+                <source src="assets/music/audio/moonsetter.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+                </audio>
+                <p>
+                    this one took me WAY too long... so many revisions... in the end it was worth it though,
+                    it's came out pretty nicely all things considered, i just wish i had someone to
+                    actually play it with, i have like 3 musician friends and none of them really like
+                    classical unfortunately.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay">
+      <img id="overlayImage" src="" alt="Enlarged" />
+    </div>
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    };
+    </script>
+</body>
+</html>
