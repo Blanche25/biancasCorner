@@ -349,3 +349,25 @@ small {
   box-shadow: 0 12px 40px rgba(0,0,0,0.6);
   transition: transform 0.3s ease;
 }
+
+/* comment box stuff */
+#HCB_comment_box #hcb_form_content,
+#HCB_comment_box #hcb_form_email,
+#HCB_comment_box #hcb_form_name,
+#HCB_comment_box #hcb_form_website {
+    background-color: var(--surface);
+}
+
+#HCB_comment_box blockquote {
+     color: var(--text);
+}
+
+
+
+label#HCB_file_label{
+    font-size: 0px;
+}
+
+#HCB_comment_box{
+    font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}

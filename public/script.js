@@ -24,6 +24,11 @@ const posts = [
     date: "2025-07-19",
     file: "doomscrolling and such.html",
   },
+  {
+    title: "jamiep when i get you jamiep",
+    date: "2025-08-22",
+    file: "jamiep when i get you jamiep.html",
+  },
 ];
 
 // Get all posts
