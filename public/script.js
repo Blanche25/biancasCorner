@@ -31,7 +31,7 @@ const posts = [
   },
 ];
 
-// Get all posts
+// get all posts
 async function getAllPosts() {
   const allPosts = posts
     .filter((post) => post.file.endsWith(".html"))
