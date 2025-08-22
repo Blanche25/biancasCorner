@@ -1,8 +1,8 @@
-@import url(../colorschemes/rosedawn.css);
+@import url(../colorschemes/paradise.css);
 
 @font-face {
-    font-family: 'Iosevka';
-    src: url('../assets/fonts/Iosevka-Regular.ttf') format('truetype');
+    font-family: "RodinNTLG";
+    src: url("assets/fonts/RodinNTLGPro-DB.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@ hr {
 }
 
 html {
-    font-family: 'Iosevka';
+    font-family: "RodinNTLG", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: var(--text)
 }
