@@ -16,7 +16,7 @@ const posts = [
   },
   {
     title: "linux has consumed me",
-    date: "2025-04-31",
+    date: "2025-04-30",
     file: "linux has consumed me.html",
   },
   {
@@ -36,28 +36,33 @@ async function getAllPosts() {
   const allPosts = posts
     .filter((post) => post.file.endsWith(".html"))
     .sort((a, b) => new Date(b.date) - new Date(a.date)); // Most recent first
-
   return allPosts;
 }
+
 async function displayAllPosts() {
   const outputElement = document.getElementById("allposts-list");
   const allPosts = await getAllPosts();
-
   const ul = document.createElement("ul");
   allPosts.forEach((post) => {
     const li = document.createElement("li");
     li.classList.add("tile");
-
     const a = document.createElement("a");
     a.href = `posts/${post.file}`;
-    a.textContent = `${post.date} - ${post.title}`;
+
+    // Create date span
+    const dateSpan = document.createElement("span");
+    dateSpan.classList.add("date");
+    dateSpan.textContent = post.date;
+
+    // Add date span and title to link
+    a.appendChild(dateSpan);
+    a.appendChild(document.createTextNode(" " + post.title));
+
     li.appendChild(a);
     ul.appendChild(li);
   });
-
   outputElement.appendChild(ul);
 }
-
 
 // Get 3 most recent posts
 async function getRecentPosts() {
@@ -65,26 +70,32 @@ async function getRecentPosts() {
     .filter((post) => post.file.endsWith(".html"))
     .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date (most recent first)
     .slice(0, 3);
-
   return recentPosts;
 }
+
 async function displayPosts() {
   const outputElement = document.getElementById("posts-list");
   const recentPosts = await getRecentPosts();
-
   const ul = document.createElement("ul");
   recentPosts.forEach((post) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.href = `posts/${post.file}`;
-    a.textContent = `${post.date} - ${post.title}`;
+
+    // Create date span
+    const dateSpan = document.createElement("span");
+    dateSpan.classList.add("date");
+    dateSpan.textContent = post.date;
+
+    // Add date span and title to link
+    a.appendChild(dateSpan);
+    a.appendChild(document.createTextNode(" " + post.title));
+
     li.appendChild(a);
     ul.appendChild(li);
   });
-
   outputElement.appendChild(ul);
 }
-
 
 // Image stuff
 document.addEventListener('DOMContentLoaded', () => {

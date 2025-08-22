@@ -13,72 +13,66 @@
 </head>
 
 <body>
-    <div class="container">
     <header>
-        <img class="header-img" src="assets/starsky.png" alt="" />
-        <h1 class="header-text">//bianca's corner</h1>
+        <!-- <img class="header-img" src="assets/starsky.png" alt="" /> -->
+        <h1 class="header-text">✦ bianca's corner ✦</h1>
     </header>
-      <div class="grid">
-        <div class="main">
-            <div style="padding-top: 0.2rem; padding-bottom: 0.2rem" class="tile">
-               <h2>/home</h2>
-            </div>
-            <div class="map-grid tile" style="margin-top: 1rem">
-               <div class="map-item-green">
-                  <a href="about.html">about</a>
-               </div>
-               <div class="map-item-red">
-                  <a href="blog.html">blog</a>
-               </div>
-               <div class="map-item-blue">
-                  <a href="guestbook.html">guestbook</a>
-               </div>
-               <div class="map-item-yellow">
-                  <a href="music.html">music</a>
-               </div>
-            </div>
+    <div class="container">
+    <h2>
+        ✦ navigation
+    </h2>
+    <div class="buttons-page">
+        <a href="blog.html">
+        <div class="button">
+            <span class="button-icon red">🖋</span>
+            <div class="button-label">blog</div>
+        </div>
+        </a>
+        <a href="music.html">
+        <div class="button">
+            <span class="button-icon blue">𝄞</span>
+            <div class="button-label">music</div>
+        </div>
+        </a>
+        <a href="about.html">
+        <div class="button">
+            <span class="button-icon green">@</span>
+            <div class="button-label">about</div>
+        </div>
+        </a>
+        <a href="guestbook.html">
+        <div class="button">
+            <span class="button-icon orange">🕮</span>
+            <div class="button-label">guestbook</div>
+        </div>
+        </a>
+    </div>
 
-            <div class="tile" style="margin-top: 1rem">
-               <h2>recent blog posts</h2>
-               <div id="posts-list"></div>
-               <small><a href="blog.html">see more...</a></small>
-               <small style="float: right"><a href="rss.xml">[rss feed]</a></small>
-            </div>
-         </div>
+    <h2>
+        ✦ recent posts
+    </h2>
+    <div id="posts-list"></div>
+    <div style="margin-bottom: 4rem;">
+    <small style="float: left"><a href="blog.html">see more...</a></small>
+    <small style="float: right"><a href="rss.xml">[rss feed]</a></small>
+    </div>
 
-         <div class="sidebar">
-            <div class="now-playing-section tile" style="padding-bottom: 0">
-               <div class="now-playing">
-                  <iframe style="
-                                    border: none;
-                                    max-width: fit-content;
-                                    max-height: fit-content;
-                                " src="lastfm-now-playing-main/index.html"></iframe>
-               </div>
-            </div>
-
-            <div class="links tile">
-               <h2>links</h2>
-               <ul>
-                  <li><a href="outlinks.html">outlinks</a></li>
-                  <li><a href="archive.html">site archive</a></li>
-               </ul>
-            </div>
-
-            <div class="recent-frame tile">
-               <h2 style="margin-bottom: 0px;">recent changes</h2>
-               <iframe src="recentchanges.html" style="border: 0px; margin: 0px"></iframe>
-            </div>
-         </div>
+    <h2>
+        ✦ recent changes
+    </h2>
+    <div class="recent-frame">
+       <iframe src="recentchanges.html" style="border: 0px; margin: 0px"></iframe>
+    </div>
+    <div class="footer-text">
+        <hr>
+         site inspired by
+         <a target="_blank" href="https://juneish.neocities.org/"><img src="assets/buttons/webcatz.gif"
+               style="height: 1.2rem" /></a>
+         <br />
+         <a href="https://github.com/Blanche25/biancascorner">source code on github</a>
       </div>
    </div>
-   <div class="footer-text">
-      site inspired by
-      <a target="_blank" href="https://juneish.neocities.org/"><img src="assets/buttons/webcatz.gif"
-            style="height: 1.5rem" /></a>
-      <br />
-      <a href="https://github.com/Blanche25/biancascorner">source code on github</a>
-   </div>
+
 </body>
 
 </html>
