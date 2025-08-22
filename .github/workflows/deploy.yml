@@ -15,7 +15,6 @@ jobs:
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
-          nekoweb-domain: '/'
+          nekoweb-domain: 'blanche.nekoweb.org'
           nekoweb-username: 'blanche'
-          nekoweb-folder: '/'
           directory: 'public'
