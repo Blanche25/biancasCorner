@@ -1,0 +1,18 @@
+:root {
+  --base: #faf4ed;
+  --surface: #fffaf3;
+  --overlay: #f2e9e1;
+
+  /* Text colors */
+  --text: #181515;
+  --subtle: #797593;
+  --muted: #9893a5;
+
+  /* Highlight colors */
+  --red: #e05f65;      /* base08 */
+  --orange: #E46A3A;   /* base09 */
+  --yellow: #f1cf8a;   /* base0A */
+  --green: #78dba9;    /* base0B */
+  --blue: #70a5eb;     /* base0D */
+  --purple: #c68aee;   /* base0E */
+}

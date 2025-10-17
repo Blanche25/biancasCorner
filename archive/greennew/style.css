@@ -1,0 +1,443 @@
+@import url(colorschemes/paradise.css);
+
+@font-face {
+  font-family: "Iosevka";
+  src: url("assets/fonts/Iosevka-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "RodinNTLG";
+    src: url("assets/fonts/RodinNTLGPro-DB.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes move-pan {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100px 100px;
+  }
+}
+
+* {
+    font-family: "RodinNTLG", Arial, Helvetica, sans-serif;
+    color: var(--text);
+}
+
+body {
+    /* background-color: var(--base); */
+    background-image: url(assets/forest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0rem;
+    min-height: 100vh
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+/*
+body::before {
+    transform: rotate(30deg);
+}
+*/
+header {
+    height: auto;
+    max-height: 20rem;
+    text-align: center;
+    max-width: 700px;
+    background-color: var(--base);
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: solid 2px var(--green);
+    outline-offset: -6px;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+.buttons-page{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.header-img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 10rem;
+  /* border-radius: 15px; */
+  margin: auto;
+  object-fit: cover;
+  filter: brightness(0.7);
+  box-shadow: 0.5rem 0.5rem;
+}
+
+.header-text {
+  /* background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--green), var(--blue), var(--purple)); */
+  color: var(--text);
+  padding: 0.5rem;
+}
+
+.sidebar {
+  max-width: 300px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--base);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+  line-height: 2.8rem;
+}
+
+h2 {
+    background: linear-gradient(to right,
+            var(--green) 4px,
+            var(--green) 8px,
+            transparent 8px,
+            transparent 12px,
+            var(--green) 12px,
+            var(--green) 100%
+        );
+        background-repeat: no-repeat;
+    width: 98%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
+
+.divider{
+    background-color: var(--green);
+    width: 98%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    background-color: #aaaaaa00;
+    border: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    /* background-color: #ccc; */
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+ display: none;
+ overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.button {
+    display: inline-flex;
+    border: none;
+    padding: 0;
+    overflow: hidden;     /* ensures the square and text stay inside same rectangle */
+    height: 2.5rem;
+    width: 10rem;
+    background-color: var(--muted);
+}
+.button a:hover, a{
+    color: #aaaaaa00;
+}
+
+.date{
+    background-color: var(--text);
+    color: var(--base);
+    border-radius: 5px;
+    text-decoration: none;
+}
+a span.date {
+  text-decoration: none !important;
+}
+
+.red{
+    background-color: var(--red);
+}
+.green{
+    background-color: var(--green);
+}
+.orange{
+    background-color: var(--orange);
+}
+.purple{
+    background-color: var(--purple);
+}
+.blue{
+    background-color: var(--blue);
+}
+
+.button-icon {
+    width: 2.5rem;              /* square size */
+    height: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.button-label{
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.border {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 2px solid var(--text);
+}
+
+.map-item.wide {
+  grid-column: span 1;
+}
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--base);
+  background-color: var(--text);
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: var(--text);
+  /* background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--green), var(--blue), var(--purple)); */
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+.footer-text {
+  font-size: 0.75rem;
+  color: var(--highlight-high);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.album-art {
+  margin-right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20%;
+  float: left;
+}
+
+.now-playing {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0rem;
+  max-height: 5.5rem;
+}
+
+.song-info {
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+.song-info a {
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+.recent {
+  font-size: 0.875rem;
+  margin-top: 0px;
+  display: block;
+}
+
+.recent p{
+    padding-bottom: 0.5rem;
+    padding-top: 0rem;
+    border-bottom: 0.2rem dotted var(--text);
+}
+
+.recent-frame {
+  margin-top: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.recent-frame iframe {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding: 1rem;
+  }
+}
+
+.squares {
+  background-image: radial-gradient(circle,
+      var(--text) 0.09rem,
+      transparent 1px),
+    radial-gradient(circle, var(--text) 0.09rem, transparent 1px);
+  background-size: 20px 20px;
+  padding: 1rem;
+}
+
+.pfp {
+  border-radius: 5%;
+  width: 7rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.webrings {
+  margin: auto;
+  width: fit-content;
+}
+
+.buttonwall {
+  margin: auto;
+  padding: 0.5rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttonwall img {
+  margin: 0.2rem;
+}
+
+.atabook {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 30px;
+}
+
+.image-item {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.image-item:hover img {
+  z-index: 10;
+  transform: scale(1.1);
+}
+
+.overlay {
+  display: none; /* hidden by default */
+  position: fixed; /* stay fixed on screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85); /* dark backdrop */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* VERY important: make sure it's high enough */
+  cursor: zoom-out;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+/* comment box stuff */
+#HCB_comment_box #hcb_form_content,
+#HCB_comment_box #hcb_form_email,
+#HCB_comment_box #hcb_form_name,
+#HCB_comment_box #hcb_form_website {
+    background-color: var(--surface);
+}
+
+#HCB_comment_box blockquote {
+     color: var(--text);
+}
+
+label#HCB_file_label{
+    font-size: 0px;
+}
+
+#HCB_comment_box{
+    font-family: "Iosevka", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}

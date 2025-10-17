@@ -1,91 +1,45 @@
 <!doctype html>
-<html lang="en">
-
 <head>
-   <meta charset="UTF-8" />
-   <meta name="author" content="Blanche" />
-   <meta name="description" content="a small personal website" />
-   <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>bianca's corner</title>
-   <link href="style.css" rel="stylesheet" />
-   <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Blanche" />
+    <meta name="description" content="a small personal website" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home - bianca's corner</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
 </head>
-
 <body>
-    <header>
-        <!-- <img class="header-img" src="assets/starsky.png" alt="" /> -->
-        <h1 class="header-text">✦ bianca's corner ✦</h1>
-    </header>
+    <nav>
+        <a href="index.html"><img src="assets/biancaHLD.png" alt="site logo" class="navlogo" /></a>
+        <span class="navelem"><a href="about.html">about</a></span>
+        <span class="navelem"><a href="blog.html">blog</a></span>
+        <span class="navelem"><a href="music.html">music</a></span>
+    </nav>
     <div class="container">
-    <h2>
-        ✦ navigation
-    </h2>
-    <div class="buttons-page">
-        <a href="blog.html">
-        <div class="button">
-            <span class="button-icon red">🖋</span>
-            <div class="button-label">blog</div>
+        <div class="bannerbox">
+            <div class="bannerimg">
+                <img src="./assets/banner/magicPatternGreen.jpg" alt="" />
+            </div>
+            <small>
+                art by
+                <a href="https://unsplash.com/it/foto/una-foto-sfocata-di-un-orologio-su-un-muro-87PP9Zd7MNo">MagicPattern</a>
+            </small>
         </div>
-        </a>
-        <a href="music.html">
-        <div class="button">
-            <span class="button-icon blue">𝄞</span>
-            <div class="button-label">music</div>
+        <div class="trail"></div>
+        <h2>hellooo</h2>
+        <p>
+            i'm bianca, welcome to my page!
+            <br>
+            i'm currently in the process of re-doing the entire website, so lots of things
+            are going to be broken!!!
+        </p>
+        <br>
+        <h2>recent posts</h2>
+        <div id="posts-list"></div>
+        <div style="margin-bottom: 4rem;">
+        <small style="float: left"><a href="blog.html">see more...</a></small>
+        <small style="float: right"><a href="rss.xml">[rss feed]</a></small>
         </div>
-        </a>
-        <a href="about.html">
-        <div class="button">
-            <span class="button-icon green">@</span>
-            <div class="button-label">about</div>
-        </div>
-        </a>
-        <a href="guestbook.html">
-        <div class="button">
-            <span class="button-icon orange">🕮</span>
-            <div class="button-label">guestbook</div>
-        </div>
-        </a>
     </div>
-
-    <h2>
-        ✦ recent posts
-    </h2>
-    <div id="posts-list"></div>
-    <div style="margin-bottom: 4rem;">
-    <small style="float: left"><a href="blog.html">see more...</a></small>
-    <small style="float: right"><a href="rss.xml">[rss feed]</a></small>
-    </div>
-
-    <h2>
-        ✦ listening to...
-    </h2>
-    <div class="now-playing">
-       <iframe style="
-            border: none;
-             max-width: fit-content;
-             max-height: fit-content;
-             "src="lastfm-now-playing-main/index.html"></iframe>
-    </div>
-    <br>
-
-
-    <h2>
-        ✦ changes
-    </h2>
-    <div class="recent-frame">
-       <iframe src="recentchanges.html" style="border: 0px; margin: 0px"></iframe>
-    </div>
-    <div class="footer-text">
-        <hr>
-         site inspired by
-         <a target="_blank" href="https://juneish.neocities.org/"><img src="assets/buttons/webcatz.gif"
-               style="height: 1.2rem" /></a>
-         <br />
-         <a href="https://github.com/Blanche25/biancascorner">source code on github</a>
-      </div>
-   </div>
-
 </body>
-
-</html>
