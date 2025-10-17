@@ -29,6 +29,10 @@ body {
     background-color: var(--base);
 }
 
+li {
+    margin-bottom: 0.4rem;
+}
+
 nav {
     box-sizing: border-box;
     max-height: 3rem;
@@ -82,7 +86,7 @@ nav {
     background-color: var(--text);
     color: var(--base);
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .navelem {
