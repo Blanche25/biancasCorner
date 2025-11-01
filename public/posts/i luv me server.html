@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Blanche">
+    <meta name="description" content="a small personal website">
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i luv me server - bianca's corner</title>
+    <link href="../style.css" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="../blog.html"><- go back</a>
+        <h1>i luv me server</h1>
+        <small class="date">1st nov 2025</small>
+        <p>
+            what's up mother shuckers
+            <br>
+            so like a year ago i bought a used pc on ebay along with a friend of mine to turn into our home server.
+            it was quite a good deal considering how cheap it was, the cpu was decent and probably overkill for what we wanted to do, and it had both an ssd to boot from and a 1tb hard drive to use as storage, which was more than enough. we decided to name it Tabitha, after a Scarlet Hollow character (go play it NOW it's great).
+            <div class="image-grid">
+                <div class="image-item"><img src="../assets/blogimgs/serverspecs.png"></div>
+            </div>
+            <br><br>
+            now, when we first got it, i was but a babe cradled in the soft velvet blanket of ignorance, so i installed regular ubuntu (with gnome installed...) and got to work trying to get nextcloud to work. it was horrible. it took me an entire week to have a free dns set up with an installation of nextcloud that actually worked. and even then it was broken!! backups didn't work, and neither did automatic updates. but for now, it was enough. i also got an immich instance running along with a short-lived minecraft server.
+            <br><br>
+            but then some days ago i thought: "im a smart girl, i have evolved from my barbaric practices, surely i can get a better set up for my server", and so i got to work.
+            <br>
+            first thing i did was swap out ubuntu with the ol' reliable debain (and made sure to keep it headless this time), no more snaps for me, and also more resources freed up to use.
+            <br>
+            then i started looking into how to get a reverse proxy working. i followed <a href"https://youtu.be/DFUmfHqQWyg">this guide</a> from TechHut, which was super helpful and quick (for anyone interested, i got my free dns from dynu).
+            <br>
+            then it all fell apart when i noticed that my newly installed nextcloud was using the wrong drive for storage. "no problem" i thought, "i'll just reinstall it with the correct directory in the env variables". and then for some reason it just. ate the entire hard drive. or well to be more precise, it's like it copied my entire debian install to the hdd from the ssd, with programs being run from it as well which was. something. also my backup from my previous install was completely gone so that's something, probably should've gotten a second hdd for backups.
+            <br><br>
+            realising my install was now completely fucked, i gave up for the day and decided i'd try again the next day. thankfully, it went all smoothly, so now it's all properly working and not self destructing.
+            <br>
+            for now the services i got running are:
+            <ul>
+                <li>nextcloud, for cloud storage and online documents</li>
+                <li>immich, for backing up photos</li>
+                <li>portainer, makes managing docker containers much easier, especially from mobile
+                    if i'm ever somewhere without my pc</li>
+            </ul>
+            <br>
+            so overall i'm pretty happy with my current set up, though there's definitely
+            room for upgrades, like an hdd for backups and some better connection (my isp sucks balls), and
+            i encourage anyone who's even vaguely interested in hosting their own stuff in trying to make a home server,
+            you'll learn a lot and you can use literally any old pc you have.
+        </p>
+        <div id="overlay" class="overlay">
+          <img id="overlayImage" src="" alt="Enlarged" />
+        </div>
+    </div>
+
+    <div class="container">
+</body>
+</html>
