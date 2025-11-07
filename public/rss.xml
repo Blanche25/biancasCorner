@@ -4,61 +4,60 @@
     <title>Bianca's corner</title>
     <link>https://blanche.nekoweb.org/</link>
     <description>Bianca's blog of random things.</description>
-
     <item>
-      <title>oh hey i have a website now</title>
-      <link>https://blanche.nekoweb.org//posts/oh%20hey%20i%20have%20a%20website%20now.html</link>
-      <description>oh hey i have a website now</description>
-      <pubDate>Fri, 03 Jan 2025 00:00:00 GMT</pubDate>
-      <guid>https://blanche.nekoweb.org//posts/oh%20hey%20i%20have%20a%20website%20now.html</guid>
+        <title>i luv me server</title>
+        <link>https://blanche.nekoweb.org/posts/i luv me server.html</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 GMT</pubDate>
+        <description><![CDATA[love having a home server<br><img src="https://blanche.nekoweb.org/assets/blogimgs/serverspecs.png" />]]></description>
+        <enclosure url="https://blanche.nekoweb.org/assets/blogimgs/serverspecs.png" type="image/png"/>
     </item>
 
     <item>
-      <title>when the house leaves or smth</title>
-      <link>https://blanche.nekoweb.org//posts/when%20the%20house%20leaves%20or%20smth.html</link>
-      <description>when the house leaves or smth</description>
-      <pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate>
-      <guid>https://blanche.nekoweb.org//posts/when%20the%20house%20leaves%20or%20smth.html</guid>
+        <title>jamiep when i get you jamiep</title>
+        <link>https://blanche.nekoweb.org/posts/jamiep when i get you jamiep.html</link>
+        <pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate>
+        <description><![CDATA[weird internet music my beloved<br><img src="https://blanche.nekoweb.org/assets/blogimgs/default.png" />]]></description>
+        <enclosure url="https://blanche.nekoweb.org/assets/blogimgs/default.png" type="image/png"/>
     </item>
 
     <item>
-      <title>breaking nintendo's tos because i can</title>
-      <link>https://blanche.nekoweb.org//posts/breaking%20nintendo%27s%20tos%20because%20i%20can.html</link>
-      <description>breaking nintendo's tos because i can</description>
-      <pubDate>Mon, 03 Feb 2025 00:00:00 GMT</pubDate>
-      <guid>https://blanche.nekoweb.org//posts/breaking%20nintendo%27s%20tos%20because%20i%20can.html</guid>
+        <title>doomscrolling and such</title>
+        <link>https://blanche.nekoweb.org/posts/doomscrolling and such.html</link>
+        <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
+        <description><![CDATA[it's that damn phone!!<br><img src="https://blanche.nekoweb.org/assets/blogimgs/bedtimemindfulness.jpg" />]]></description>
+        <enclosure url="https://blanche.nekoweb.org/assets/blogimgs/bedtimemindfulness.jpg" type="image/jpeg"/>
     </item>
 
     <item>
-      <title>linux has consumed me</title>
-      <link>https://blanche.nekoweb.org//posts/linux%20has%20consumed%20me.html</link>
-      <description>linux has consumed me</description>
-      <pubDate>Mon, 31 May 2025 00:00:00 GMT</pubDate>
-      <guid>https://blanche.nekoweb.org//posts/linux%20has%20consumed%20me.html</guid>
+        <title>linux has consumed me</title>
+        <link>https://blanche.nekoweb.org/posts/linux has consumed me.html</link>
+        <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
+        <description><![CDATA[the best os<br><img src="https://blanche.nekoweb.org/assets/blogimgs/deskbiscuit.png" />]]></description>
+        <enclosure url="https://blanche.nekoweb.org/assets/blogimgs/deskbiscuit.png" type="image/png"/>
     </item>
 
     <item>
-      <title>doomscrolling and such</title>
-      <link>https://blanche.nekoweb.org//posts/doomscrolling%20and%20such.html</link>
-      <description>doomscrolling and such</description>
-      <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
-      <guid>https://blanche.nekoweb.org//posts/doomscrolling%20and%20such.html</guid>
+        <title>breaking nintendo's tos because i can</title>
+        <link>https://blanche.nekoweb.org/posts/breaking nintendo's tos because i can.html</link>
+        <pubDate>Mon, 03 Feb 2025 00:00:00 GMT</pubDate>
+        <description><![CDATA[modding my switch out of spite<br><img src="https://blanche.nekoweb.org/assets/blogimgs/switch.jpg" />]]></description>
+        <enclosure url="https://blanche.nekoweb.org/assets/blogimgs/switch.jpg" type="image/jpeg"/>
     </item>
 
     <item>
-      <title>jamiep when i get you jamiep</title>
-      <link>https://blanche.nekoweb.org//posts/jamiep%20when%20i%20get%20you%20jamiep.html</link>
-      <description>jamiep when i get you jamieph</description>
-      <pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate>
-      <guid>https://blanche.nekoweb.org//posts/jamiep%20when%20i%20get%20you%20jamiep.html</guid>
+        <title>when the house leaves or smth</title>
+        <link>https://blanche.nekoweb.org/posts/when the house leaves or smth.html</link>
+        <pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate>
+        <description><![CDATA[book👏review👏<br><img src="https://blanche.nekoweb.org/assets/blogimgs/cantleaves.jpg" />]]></description>
+        <enclosure url="https://blanche.nekoweb.org/assets/blogimgs/cantleaves.jpg" type="image/jpeg"/>
     </item>
 
     <item>
-      <title>i luv me server</title>
-      <link>https://blanche.nekoweb.org//posts/i%20luv%20me%20server.html</link>
-      <description>i luv me server</description>
-      <pubDate>Sat, 01 Nov 2025 00:00:00 GMT</pubDate>
-      <guid>https://blanche.nekoweb.org//posts/i%20luv%20me%20server.html</guid>
+        <title>oh hey i have a website now</title>
+        <link>https://blanche.nekoweb.org/posts/oh hey i have a website now.html</link>
+        <pubDate>Fri, 03 Jan 2025 00:00:00 GMT</pubDate>
+        <description><![CDATA[my first blog post!<br><img src="https://blanche.nekoweb.org/assets/blogimgs/default.png" />]]></description>
+        <enclosure url="https://blanche.nekoweb.org/assets/blogimgs/default.png" type="image/png"/>
     </item>
   </channel>
 </rss>
