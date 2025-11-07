@@ -1,6 +1,3 @@
-/* This file defines how custom elements will look like, setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! */
-
-/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
     text-align: center;
     background-image: url(https://blanche.nekoweb.org/assets/banner/magicPatternGreen.jpg); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
@@ -14,4 +11,11 @@
 }
 .site-box > a > span {
     color: var(--darkbrown);
+}
+@import url(colorschemes/paradise.css);
+.follow {
+    color: var(--text);
+}
+.following {
+    color: var(--text);
 }
