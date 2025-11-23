@@ -184,6 +184,16 @@ small {
     max-height: 24px;
 }
 
+.music-widget {
+    border: none;
+    outline: none;
+}
+.music-widget iframe{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
 .overlay {
   display: none; /* hidden by default */
   position: fixed; /* stay fixed on screen */
