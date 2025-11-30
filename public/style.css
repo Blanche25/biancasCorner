@@ -10,6 +10,7 @@
     src: url("assets/fonts/Iosevka-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 a {
@@ -191,6 +192,10 @@ small {
 .header-small span {
   background-color: var(--purple);
   padding: 10px;
+}
+
+.icon{
+    font-family: "Iosevka";
 }
 
 .image-grid {
