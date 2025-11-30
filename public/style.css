@@ -38,6 +38,7 @@ footer {
     clear: both;
 }
 
+
 hr{
     margin-left: 12%;
     margin-right: 12%;
@@ -145,6 +146,51 @@ small {
 .gridel p {
     text-align: center;
     margin-top: 0;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  background: repeating-linear-gradient(
+    to right,
+    var(--green) 0px,
+    var(--green) 4px,
+    #00000000 4px,
+    #00000000 12px
+  );
+  padding: 0;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 1rem;
+  font-weight: 800;
+}
+
+.header span {
+  background-color: var(--green);
+  padding: 20px;
+}
+
+.header-small {
+  position: relative;
+  display: flex;
+  background: repeating-linear-gradient(
+    to right,
+    var(--purple) 0px,
+    var(--purple) 4px,
+    #00000000 4px,
+    #00000000 12px
+  );
+  padding: 0;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.header-small span {
+  background-color: var(--purple);
+  padding: 10px;
 }
 
 .image-grid {
